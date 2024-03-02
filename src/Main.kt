@@ -1,7 +1,9 @@
 import kotlin.math.PI
 import kotlin.math.sqrt
 
-class Segitiga(private val alas: Double, private val tinggi: Double, private val sisi1: Double, private val sisi2: Double, private val sisi3: Double) {
+class Segitiga(
+    private val alas: Double,
+    private val tinggi: Double, private val sisi1: Double, private val sisi2: Double, private val sisi3: Double) {
 
     fun hitungLuas(): Double {
         return 0.5 * alas * tinggi
@@ -24,12 +26,12 @@ class Lingkaran(private val jariJari: Double) {
 }
 
 fun main() {
-    // Contoh penggunaan untuk segitiga
+    //  menghitung luas dan keliling untuk segitiga
     val segitiga = Segitiga(alas = 5.0, tinggi = 8.0, sisi1 = 3.0, sisi2 = 4.0, sisi3 = 5.0)
     println("Luas Segitiga: ${segitiga.hitungLuas()}")
     println("Keliling Segitiga: ${segitiga.hitungKeliling()}")
 
-    // Contoh penggunaan untuk lingkaran
+    //  menghitung luas dan keliling untuk lingkaran
     val lingkaran = Lingkaran(jariJari = 4.0)
     println("Luas Lingkaran: ${lingkaran.hitungLuas()}")
     println("Keliling Lingkaran: ${lingkaran.hitungKeliling()}")
